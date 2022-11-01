@@ -62,26 +62,34 @@ struct Aviliblity: View {
                         }
                     }
                     
-                }.searchable(text: $searchText)//.scrollContentBackground(.hidden)
-               
-                ForEach(searchResults.keys.sorted(),id:\.self){ key in
-                  VStack{
-                       HStack{
-                          Text("\(key)").bold()
-                            Spacer()
-                            Text("\(searchResults[key]!)")
-                            
-                       }
-                       // Spacer()
-                      
+                }.searchable(text: $searchText)
+                {
+                    ForEach(searchResults.keys.sorted(),id:\.self){ key in
+                      VStack{
+                          
+                          
+                          
+                           HStack{
+                               
+
+                              Text("\(key)").bold()
+                                Spacer()
+                                Text("\(searchResults[key]!)")
+                                
+                           }
+                           // Spacer()
+                          
+                        }
                     }
                 }
-
-        
+                
+                
+                //.scrollContentBackground(.hidden)
+               
+             
                 
             }
         }
-        
         
     }
     
@@ -91,6 +99,7 @@ struct Aviliblity: View {
         if searchText.isEmpty {
             return locations
         } else {
+           
             return locations.filter { $0.key.contains(searchText) }
         }
         
