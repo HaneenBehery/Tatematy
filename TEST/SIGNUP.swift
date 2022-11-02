@@ -60,7 +60,7 @@ struct SIGNUPG: View {
                             Group{
                                 Toggle("", isOn: $isSelected)
                                     .padding(.leading, -310.0)
-                                    .labelsHidden()
+                            .labelsHidden()
                                     .toggleStyle(ToggleCheckboxToggleStyle())
                                     .font(.title)
                             }

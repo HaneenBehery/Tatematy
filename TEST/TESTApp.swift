@@ -18,7 +18,12 @@ struct TESTApp: App {
            
 
            //SIGNUPG()
+
+          //SIGNIN()
+            logo()
+
            SIGNIN()
+
 
         }
     }

@@ -40,6 +40,7 @@ struct SIGNIN: View {
                             .keyboardType(.phonePad)
                         
                         
+                        
                         FloatingTextField(placeHolder: "Password", text: $password, textFieldHeight: 50 , isSecureField: true)
                         
                         //   FloatingTextField(placeHolder: " password", text: $password, textFieldHeight: 50 , SecureField:true)
