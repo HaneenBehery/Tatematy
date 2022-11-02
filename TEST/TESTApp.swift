@@ -11,9 +11,20 @@ import SwiftUI
 struct TESTApp: App {
     var body: some Scene {
         WindowGroup {
+
+         //   ContentView()
+            
+           // Aviliblity()
+           
+
            //SIGNUPG()
+
           //SIGNIN()
             logo()
+
+           SIGNIN()
+
+
         }
     }
 }
