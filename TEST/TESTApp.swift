@@ -12,7 +12,8 @@ struct TESTApp: App {
     var body: some Scene {
         WindowGroup {
            //SIGNUPG()
-           SIGNIN()
+          //SIGNIN()
+            logo()
         }
     }
 }
