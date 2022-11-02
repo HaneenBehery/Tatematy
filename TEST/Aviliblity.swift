@@ -62,7 +62,7 @@ struct Aviliblity: View {
                         }
                     }
                     
-                }.searchable(text: $searchText)
+                }.scrollContentBackground(.hidden).searchable(text: $searchText)
                 {
                     ForEach(searchResults.keys.sorted(),id:\.self){ key in
                       VStack{

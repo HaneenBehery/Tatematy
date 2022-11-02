@@ -75,19 +75,53 @@ struct ContentView: View {
                .sheet(isPresented: $showSheet){
                    VStack{
                        HStack{
-                           Text("At Birth")
+                           Text("At Birth").padding().bold()
                            Spacer()
                        }
                      
                        HStack{
-                           Text("BCG")
+                           Text("BCG").frame(width: 110 ,height: 50)
                            Divider()
-                           Text("BCG")
+                           Text("In SEP 18th").frame(width: 110 ,height: 50)
                            Divider()
-                           Text("BCG")
-                       }.padding()
+                           Text("Nures name").frame(width: 110 ,height: 50)
+                       }
                        
-                   }.padding()
+                       HStack{
+                           Text("Hepatitis B").frame(width: 110 ,height: 50)
+                           Divider()
+                           Text("In nov 13th").frame(width: 110 ,height: 50)
+                           Divider()
+                           Text("Nuress name").frame(width: 110 ,height: 50)
+                       }
+                       
+                       HStack{
+                           Text("Hepatitis B").frame(width: 110 ,height: 50)
+                           Divider()
+                           Text("In nov 13th").frame(width: 110 ,height: 50)
+                           Divider()
+                           Text("Nuress name").frame(width: 110 ,height: 50)
+                       }
+                       HStack{
+                           Text("Hepatitis B").frame(width: 110 ,height: 50)
+                           Divider()
+                           Text("In nov 13th").frame(width: 110 ,height: 50)
+                           Divider()
+                           Text("Nuress name").frame(width: 110 ,height: 50)
+                       }
+                       
+                       Button("Check Availability"){
+                           
+                       }.padding()
+                           .frame(width: 300, height: 50)
+                           .font(.headline)
+                           .background(CustomColor.myColor)
+                           .cornerRadius(50)
+                           .foregroundColor(Color.white)
+                       
+                       
+                       
+                   }
                        .presentationDetents([.large,.medium,.fraction(0.75)])
                }
                 }

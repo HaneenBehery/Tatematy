@@ -13,8 +13,8 @@ struct Squdule: View {
         ScrollView{
             VStack{
                 HStack{
-                    Image("back") .resizable().frame(width: 30, height: 30)
-                    Spacer()
+                   Image("back") .resizable().frame(width: 30, height: 30)
+                   Spacer()
                     Text("Schedule").font(.title)
                 }
                 
@@ -100,20 +100,37 @@ struct Squdule: View {
                             
                             VStack{
                                 HStack{
-                                    Text("Hib").padding(.horizontal).frame(width: 100, height: 20)
-                                    
-                                    Text("IPV").padding(.horizontal).frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("Hib").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
+                                    VStack{
+                                        Text("IPV").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                                 
                                 HStack{
-                                    Text("PCV").padding(.horizontal).frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("PCV").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                     
-                                    Text("DTaP").padding(.horizontal).frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("DTaP").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                                 HStack{
-                                    Text("ROTA").padding(.horizontal).frame(width: 100, height: 20)
-                                    
-                                    Text("HepatitisB").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("ROTA").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
+                                    VStack{
+                                        Text("HepatitisB")
+                                            .frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                             }
                         }
@@ -130,20 +147,37 @@ struct Squdule: View {
                             
                             VStack{
                                 HStack{
-                                    Text("Hib").padding(.horizontal).frame(width: 100, height: 20)
-                                    
-                                    Text("IPV").padding(.horizontal).frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("Hib").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
+                                    VStack{
+                                        Text("IPV").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                                 
                                 HStack{
-                                    Text("PCV").padding(.horizontal).frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("PCV").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                     
-                                    Text("DTaP").padding(.horizontal).frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("DTaP").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                                 HStack{
-                                    Text("ROTA").padding(.horizontal).frame(width: 100, height: 20)
-                                    
-                                    Text("HepatitisB").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("ROTA").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
+                                    VStack{
+                                        Text("HepatitisB")
+                                            .frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                             }
                         }
@@ -160,20 +194,37 @@ struct Squdule: View {
                             
                             VStack{
                                 HStack{
-                                    Text("Hib").frame(width: 100, height: 20)
-                                    
-                                    Text("IPV").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("Hib").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
+                                    VStack{
+                                        Text("IPV").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                                 
                                 HStack{
-                                    Text("PCV").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("PCV").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                     
-                                    Text("DTaP").padding(.horizontal).frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("DTaP").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                                 HStack{
-                                    Text("ROTA").frame(width: 100, height: 20)
-                                    
-                                    Text("HepatitisB").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("ROTA").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
+                                    VStack{
+                                        Text("HepatitisB")
+                                            .frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                             }
                         }
@@ -190,20 +241,37 @@ struct Squdule: View {
                             
                             VStack{
                                 HStack{
-                                    Text("Hib").frame(width: 100, height: 20)
-                                    
-                                    Text("IPV").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("Hib").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
+                                    VStack{
+                                        Text("IPV").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                                 
                                 HStack{
-                                    Text("PCV").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("PCV").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                     
-                                    Text("DTaP").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("DTaP").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                                 HStack{
-                                    Text("ROTA").frame(width: 100, height: 20)
-                                    
-                                    Text("HepatitisB").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("ROTA").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
+                                    VStack{
+                                        Text("HepatitisB")
+                                            .frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                             }
                         }
@@ -220,20 +288,37 @@ struct Squdule: View {
                             
                             VStack{
                                 HStack{
-                                    Text("Hib").frame(width: 100, height: 20)
-                                    
-                                    Text("IPV").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("Hib").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
+                                    VStack{
+                                        Text("IPV").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                                 
                                 HStack{
-                                    Text("PCV").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("PCV").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                     
-                                    Text("DTaP").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("DTaP").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                                 HStack{
-                                    Text("ROTA").frame(width: 100, height: 20)
-                                    
-                                    Text("HepatitisB").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("ROTA").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
+                                    VStack{
+                                        Text("HepatitisB")
+                                            .frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                             }
                         }
@@ -250,20 +335,37 @@ struct Squdule: View {
                             
                             VStack{
                                 HStack{
-                                    Text("Hib").frame(width: 100, height: 20)
-                                    
-                                    Text("IPV").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("Hib").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
+                                    VStack{
+                                        Text("IPV").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                                 
                                 HStack{
-                                    Text("PCV").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("PCV").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                     
-                                    Text("DTaP").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("DTaP").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                                 HStack{
-                                    Text("ROTA").frame(width: 100, height: 20)
-                                    
-                                    Text("HepatitisB").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("ROTA").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
+                                    VStack{
+                                        Text("HepatitisB")
+                                            .frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                             }
                         }
@@ -278,20 +380,37 @@ struct Squdule: View {
                             
                             VStack{
                                 HStack{
-                                    Text("Hib").frame(width: 100, height: 20)
-                                    
-                                    Text("IPV").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("Hib").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
+                                    VStack{
+                                        Text("IPV").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                                 
                                 HStack{
-                                    Text("PCV").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("PCV").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                     
-                                    Text("DTaP").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("DTaP").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                                 HStack{
-                                    Text("ROTA").frame(width: 100, height: 20)
-                                    
-                                    Text("HepatitisB").frame(width: 100, height: 20)
+                                    VStack{
+                                        Text("ROTA").padding(.horizontal).frame(width: 100, height: 20)
+                                        Divider()
+                                    }
+                                    VStack{
+                                        Text("HepatitisB")
+                                            .frame(width: 100, height: 20)
+                                        Divider()
+                                    }
                                 }
                             }
                         }
@@ -300,6 +419,9 @@ struct Squdule: View {
                 
                 
             }.padding()
+            
+                
+                
         }
     }
 }
