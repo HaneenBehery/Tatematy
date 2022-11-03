@@ -6,10 +6,16 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXBuildFile section */
+
+		437A89592913B35F00F27C90 /* accScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437A89582913B35F00F27C90 /* accScreen.swift */; };
+		437A895B2913B3AC00F27C90 /* sittinges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437A895A2913B3AC00F27C90 /* sittinges.swift */; };
+		437A895D2913B3D900F27C90 /* Field1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437A895C2913B3D900F27C90 /* Field1.swift */; };
+		437A895F2913B3FC00F27C90 /* ContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437A895E2913B3FC00F27C90 /* ContactUs.swift */; };
+
 		261528D9290E691D00ABBA9B /* NewChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261528D8290E691D00ABBA9B /* NewChild.swift */; };
 		26AB6FA329127002001E914C /* InfoChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB6FA229127002001E914C /* InfoChild.swift */; };
 		26AB6FA529127115001E914C /* VaccinationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AB6FA429127115001E914C /* VaccinationState.swift */; };
+
 		7382D0BD290E67DA003D7156 /* SIGN IN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7382D0BC290E67DA003D7156 /* SIGN IN.swift */; };
 		7382D0BF290E697F003D7156 /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7382D0BE290E697F003D7156 /* FloatingTextField.swift */; };
 		7382D0C5290E745D003D7156 /* VerificationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7382D0C4290E745D003D7156 /* VerificationCode.swift */; };
@@ -45,10 +51,15 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXFileReference section */
+
+		437A89582913B35F00F27C90 /* accScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accScreen.swift; sourceTree = "<group>"; };
+		437A895A2913B3AC00F27C90 /* sittinges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sittinges.swift; sourceTree = "<group>"; };
+		437A895C2913B3D900F27C90 /* Field1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field1.swift; sourceTree = "<group>"; };
+		437A895E2913B3FC00F27C90 /* ContactUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
+
 		261528D8290E691D00ABBA9B /* NewChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChild.swift; sourceTree = "<group>"; };
 		26AB6FA229127002001E914C /* InfoChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoChild.swift; sourceTree = "<group>"; };
-		26AB6FA429127115001E914C /* VaccinationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationState.swift; sourceTree = "<group>"; };
+
 		7382D0BC290E67DA003D7156 /* SIGN IN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SIGN IN.swift"; sourceTree = "<group>"; };
 		7382D0BE290E697F003D7156 /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
 		7382D0C2290E71B7003D7156 /* SIGNUP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIGNUP.swift; sourceTree = "<group>"; };
@@ -133,6 +144,10 @@
 				C47D1E9F2907B7A1004BC255 /* Assets.xcassets */,
 				C47D1EA12907B7A1004BC255 /* Preview Content */,
 				7382D0CC29110A88003D7156 /* testView.swift */,
+				437A89582913B35F00F27C90 /* accScreen.swift */,
+				437A895A2913B3AC00F27C90 /* sittinges.swift */,
+				437A895C2913B3D900F27C90 /* Field1.swift */,
+				437A895E2913B3FC00F27C90 /* ContactUs.swift */,
 			);
 			path = TEST;
 			sourceTree = "<group>";
@@ -303,11 +318,15 @@
 				C45B73C629125CA4003563B7 /* SIGNUP.swift in Sources */,
 				7382D0CB290F9101003D7156 /* Toggle+CheckboxToggleStyle.swift in Sources */,
 				C47D1E9C2907B7A0004BC255 /* TESTApp.swift in Sources */,
+				437A895F2913B3FC00F27C90 /* ContactUs.swift in Sources */,
 				C47D1F34290E67DE004BC255 /* Squdule.swift in Sources */,
 				7382D0CD29110A88003D7156 /* testView.swift in Sources */,
 				7382D0C5290E745D003D7156 /* VerificationCode.swift in Sources */,
 				7382D0CF291243E3003D7156 /* logo.swift in Sources */,
+				437A89592913B35F00F27C90 /* accScreen.swift in Sources */,
 				7382D0BD290E67DA003D7156 /* SIGN IN.swift in Sources */,
+				437A895B2913B3AC00F27C90 /* sittinges.swift in Sources */,
+				437A895D2913B3D900F27C90 /* Field1.swift in Sources */,
 				7382D0BF290E697F003D7156 /* FloatingTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
