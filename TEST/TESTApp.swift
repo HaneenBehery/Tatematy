@@ -22,7 +22,7 @@ struct TESTApp: App {
           //SIGNIN()
             logo()
 
-           SIGNIN()
+          // SIGNIN()
 
 
         }
