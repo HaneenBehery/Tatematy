@@ -181,7 +181,7 @@ struct ContentView: View {
                         HStack{
                             
                 NavigationLink(
-            destination: NewChild().navigationBarHidden(true), label: {     Text("Add baby")
+            destination: InfoChild().navigationBarHidden(true), label: {     Text("Add baby")
                                     
                                 .padding()
                                    
