@@ -3,11 +3,19 @@
 //  TEST
 //
 //  Created by Haneen Behery on 29/03/1444 AH.
-//
+//Link(destination: Ω) {
+
 //alignment: .center
 import SwiftUI
+struct CustomColor{
+    static let myColor = Color ("tefny")
+    static let gold = Color ("gold")
+}
+
 
 struct ContentView: View {
+    @State private var showSheet: Bool = false
+    
     var body: some View {
         VStack {
             
@@ -15,35 +23,37 @@ struct ContentView: View {
             //     .resizable()
             //  .frame(width: 100, height: 100)
             // .cornerRadius(20)
-            HStack{
-                Text("Baby's Profile")
+            
+             // Text("saudi arabia")
+             //  .font(.callout)
+             // .foregroundColor(. gray)
+             
+             
+             // Image("sw")
+             //  .resizable()
+             //  .frame(width: 200, height: 200)
+             // .cornerRadius(40)
+             //Text("Swift")
+             //  .padding()
+             // Text("FIRST")
+             // Text("MEDIL").underline()
+             //Text("LAST")
+            
+            HStack(alignment: .center){
+         
+                Text("Your Baby's").padding()
                     .bold()
                     .font(.title)
                 Spacer()
-                Image("sw")
-                // Text("saudi arabia")
-                //  .font(.callout)
-                // .foregroundColor(. gray)
-                
-                
-                // Image("sw")
-                //  .resizable()
-                //  .frame(width: 200, height: 200)
-                // .cornerRadius(40)
-                //Text("Swift")
-                //  .padding()
-                // Text("FIRST")
-                // Text("MEDIL").underline()
-                //Text("LAST")
+                Image("suq") .resizable()
+                    .frame(width: 30, height: 30)
+                Image("sw").padding()
             }
+          
             
             Divider()
             
-            HStack {
-                Image("delete").padding(.vertical)
-                Text("Delete").bold()
-                Spacer()
-            }
+            
             
             VStack{
                 HStack(alignment: .center){
@@ -51,11 +61,69 @@ struct ContentView: View {
                         .resizable()
                         .frame(width: 94.63, height: 95)
                     
-                    Text("Sara’s 2 month vaccine must be taken in MAR  2023.")//.lineLimit(3)
+                    Text("Sara’s 2 month vaccine must be taken in MAR 2023")//.lineLimit(3)
                       //  .multilineTextAlignment(.leading)
                        // .frame(maxWidth: .infinity)
                     
-                    Image("next")
+                   // Image("next")
+                     Button() {
+                         showSheet.toggle()
+                     }
+              label: {
+                         Image("next")
+              }
+               .sheet(isPresented: $showSheet){
+                   VStack{
+                       HStack{
+                           Text("At Birth").padding().bold()
+                           Spacer()
+                       }
+                     
+                       HStack{
+                           Text("BCG").frame(width: 110 ,height: 50)
+                           Divider()
+                           Text("In SEP 18th").frame(width: 110 ,height: 50)
+                           Divider()
+                           Text("Nures name").frame(width: 110 ,height: 50)
+                       }
+                       
+                       HStack{
+                           Text("Hepatitis B").frame(width: 110 ,height: 50)
+                           Divider()
+                           Text("In nov 13th").frame(width: 110 ,height: 50)
+                           Divider()
+                           Text("Nuress name").frame(width: 110 ,height: 50)
+                       }
+                       
+                       HStack{
+                           Text("Hepatitis B").frame(width: 110 ,height: 50)
+                           Divider()
+                           Text("In nov 13th").frame(width: 110 ,height: 50)
+                           Divider()
+                           Text("Nuress name").frame(width: 110 ,height: 50)
+                       }
+                       HStack{
+                           Text("Hepatitis B").frame(width: 110 ,height: 50)
+                           Divider()
+                           Text("In nov 13th").frame(width: 110 ,height: 50)
+                           Divider()
+                           Text("Nuress name").frame(width: 110 ,height: 50)
+                       }
+                       
+                       Button("Check Availability"){
+                           
+                       }.padding()
+                           .frame(width: 300, height: 50)
+                           .font(.headline)
+                           .background(CustomColor.myColor)
+                           .cornerRadius(50)
+                           .foregroundColor(Color.white)
+                       
+                       
+                       
+                   }
+                       .presentationDetents([.large,.medium,.fraction(0.75)])
+               }
                 }
                 HStack{
                     
@@ -74,7 +142,18 @@ struct ContentView: View {
                     
                     Text("Omar’s 12 month vaccine must be taken in DEC 2023")
                         .multilineTextAlignment(.leading)
-                    Image("next")
+                    Button() {
+                        showSheet.toggle()
+                    }
+             label: {
+                        Image("next")
+             }
+              .sheet(isPresented: $showSheet){
+                  Text("hh")
+                      .presentationDetents([.large,.medium,.fraction(0.75)])
+              }
+                    
+                    
                 }
                 HStack{
                     
@@ -86,14 +165,20 @@ struct ContentView: View {
             }
             Divider()
             
-            Image ("add").resizable().frame(width: 67, height: 71).padding()
+          //  Image ("add").resizable().frame(width: 67, height: 71).padding()
             
             
             VStack{
                 Spacer()
                 HStack{
-                    Text("Show")
-                    Text("National Immunization Schedule").bold()
+                    Button("Add baby"){
+                        
+                    }.padding()
+                        .frame(width: 300, height: 50)
+                        .font(.headline)
+                        .background(CustomColor.myColor)
+                        .cornerRadius(50)
+                        .foregroundColor(Color.white)
                 }
             }
             
@@ -116,11 +201,19 @@ struct ContentView: View {
         //.border(Color.yellow)
         //   .cornerRadius(15)
     }
+    
+  
 }
+
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+       ContentView()
+            
         
     }
 }
+
+
