@@ -41,7 +41,7 @@ struct sittinges: View {
                      //   }
                     })
                     
-                    .navigationBarBackButtonHidden(true)
+                //    .navigationBarBackButtonHidden(true)
                     
                    
                    
@@ -100,11 +100,12 @@ struct sittinges: View {
                                 }
                      //   }
                     
-                    .navigationBarBackButtonHidden(true)
-                    .navigationBarBackButtonHidden(true)
+                //    .navigationBarBackButtonHidden(true)
+                 //   .navigationBarBackButtonHidden(true)
                     
                    
-                   
+                    NavigationLink(destination: SwiftUIView()
+                        .navigationBarBackButtonHidden(true)) {
                         
                         RoundedRectangle(cornerRadius: 20, style: .continuous)
                             .stroke(Color(red: 0.904, green: 0.743, blue: 0.468), lineWidth: 7)
@@ -123,6 +124,27 @@ struct sittinges: View {
                                         .multilineTextAlignment(.center)
                                     .padding(.bottom, -10.0)}
                                 .padding([.leading], -10) }
+                        
+                    }
+                        
+//                        RoundedRectangle(cornerRadius: 20, style: .continuous)
+//                            .stroke(Color(red: 0.904, green: 0.743, blue: 0.468), lineWidth: 7)
+//                            .frame(width: 167, height: 163)
+//                            .overlay {
+//
+//                                VStack{
+//                                    Image(systemName: "ellipsis.message")
+//                                        .foregroundColor(Color.black)
+//                                        .font(.system(size: 48))
+//                                        .padding([.top, .leading, .trailing], -5.0)
+//                                        .padding(3)
+//                                    Text("Common Questions")
+//                                        .font(.system(size:21))
+//                                        .font(.callout)
+//                                        .foregroundColor(.black)
+//                                        .multilineTextAlignment(.center)
+//                                    .padding(.bottom, -10.0)}
+//                                .padding([.leading], -10) }
                         
                     }
                         

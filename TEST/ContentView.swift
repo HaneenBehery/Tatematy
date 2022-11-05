@@ -14,7 +14,7 @@ struct CustomColor{
 
 
 struct ContentView: View {
-    @State private var showSheet: Bool = false
+  //  @State private var showSheet: Bool = false
     
     var body: some View {
         NavigationView{
@@ -68,75 +68,86 @@ struct ContentView: View {
                                 .frame(width: 94.63, height: 95)
                             
                             Text("Sara’s 2 month vaccine must be taken in MAR 2023")//.lineLimit(3)
+                            
+                            NavigationLink(
+                                destination: VaccineInfoPage().navigationBarHidden(true), label: {
+                                    Image("next") .resizable()
+                                        .frame(width: 30, height: 30)
+                                 
+                                })
+                            .navigationBarHidden(true)
+                            
+                      //      Image("next")
                             //  .multilineTextAlignment(.leading)
                             // .frame(maxWidth: .infinity)
                             
                             // Image("next")
-                            Button() {
-                                showSheet.toggle()
-                            }
-                        label: {
-                            Image("next")
-                        }
-                        .sheet(isPresented: $showSheet){
-                            VStack{
-                                HStack{
-                                    Text("At Birth").padding().bold()
-                                    Spacer()
-                                }
-                                
-                                HStack{
-                                    Text("BCG").frame(width: 110 ,height: 50)
-                                    Divider()
-                                    Text("In SEP 18th").frame(width: 110 ,height: 50)
-                                    Divider()
-                                    Text("Nures name").frame(width: 110 ,height: 50)
-                                }
-                                
-                                
-                                HStack{
-                                    Text("Hepatitis B").frame(width: 110 ,height: 50)
-                                    Divider()
-                                    Text("In nov 13th").frame(width: 110 ,height: 50)
-                                    Divider()
-                                    Text("Nuress name").frame(width: 110 ,height: 50)
-                                }
-                                
-                                HStack{
-                                    Text("Hepatitis B").frame(width: 110 ,height: 50)
-                                    Divider()
-                                    Text("In nov 13th").frame(width: 110 ,height: 50)
-                                    Divider()
-                                    Text("Nuress name").frame(width: 110 ,height: 50)
-                                }
-                                HStack{
-                                    Text("Hepatitis B").frame(width: 110 ,height: 50)
-                                    Divider()
-                                    Text("In nov 13th").frame(width: 110 ,height: 50)
-                                    Divider()
-                                    Text("Nuress name").frame(width: 110 ,height: 50)
-                                }
-                                
-                                Button("Check Availability"){
-                                    
-                                }.padding()
-                                    .frame(width: 300, height: 50)
-                                    .font(.headline)
-                                    .background(CustomColor.myColor)
-                                    .cornerRadius(50)
-                                    .foregroundColor(Color.white)
-                                
-                                
-                                
-                            }
-                            .presentationDetents([.large,.medium,.fraction(0.75)])
-                        }
+//                            Button() {
+//                                showSheet.toggle()
+//                            }
+//                        label: {
+//                            Image("next")
+//                        }
+//                        .sheet(isPresented: $showSheet){
+//                            VStack{
+//                                HStack{
+//                                    Text("At Birth").padding().bold()
+//                                    Spacer()
+//                                }
+//
+//                                HStack{
+//                                    Text("BCG").frame(width: 110 ,height: 50)
+//                                    Divider()
+//                                    Text("In SEP 18th").frame(width: 110 ,height: 50)
+//                                    Divider()
+//                                    Text("Nures name").frame(width: 110 ,height: 50)
+//                                }
+//
+//
+//                                HStack{
+//                                    Text("Hepatitis B").frame(width: 110 ,height: 50)
+//                                    Divider()
+//                                    Text("In nov 13th").frame(width: 110 ,height: 50)
+//                                    Divider()
+//                                    Text("Nuress name").frame(width: 110 ,height: 50)
+//                                }
+//
+//                                HStack{
+//                                    Text("Hepatitis B").frame(width: 110 ,height: 50)
+//                                    Divider()
+//                                    Text("In nov 13th").frame(width: 110 ,height: 50)
+//                                    Divider()
+//                                    Text("Nuress name").frame(width: 110 ,height: 50)
+//                                }
+//                                HStack{
+//                                    Text("Hepatitis B").frame(width: 110 ,height: 50)
+//                                    Divider()
+//                                    Text("In nov 13th").frame(width: 110 ,height: 50)
+//                                    Divider()
+//                                    Text("Nuress name").frame(width: 110 ,height: 50)
+//                                }
+//
+//                                Button("Check Availability"){
+//
+//                                }.padding()
+//                                    .frame(width: 300, height: 50)
+//                                    .font(.headline)
+//                                    .background(CustomColor.myColor)
+//                                    .cornerRadius(50)
+//                                    .foregroundColor(Color.white)
+//
+//
+//
+//                            }
+//                            .presentationDetents([.large,.medium,.fraction(0.75)])
+//                        }
                         }
                         HStack{
                             
                             Text("Sara")
                                 .bold()
                                 .frame(width: 85)
+                            
                             Spacer()
                         }
                     }
@@ -150,16 +161,26 @@ struct ContentView: View {
                             
                             Text("Omar’s 12 month vaccine must be taken in DEC 2023")
                                 .multilineTextAlignment(.leading)
-                            Button() {
-                                showSheet.toggle()
-                            }
-                        label: {
-                            Image("next")
-                        }
-                        .sheet(isPresented: $showSheet){
-                            Text("hh")
-                                .presentationDetents([.large,.medium,.fraction(0.75)])
-                        }
+                            
+                            NavigationLink(
+                                destination: OmarVaccineInformationPage().navigationBarHidden(true), label: {
+                                    Image("next") .resizable()
+                                        .frame(width: 30, height: 30)
+                                 
+                                })
+                            .navigationBarHidden(true)
+                            
+                  
+//                            Button() {
+//                                showSheet.toggle()
+//                            }
+//                        label: {
+//                            Image("next")
+//                        }
+//                        .sheet(isPresented: $showSheet){
+//                            Text("hh")
+//                                .presentationDetents([.large,.medium,.fraction(0.75)])
+//                        }
                             
                             
                         }
@@ -190,10 +211,11 @@ struct ContentView: View {
                             
                        
                                 .frame(width: 300, height: 50)
-                                .font(.headline)
                                 .background(CustomColor.myColor)
                                 .cornerRadius(50)
                                 .foregroundColor(Color.white)
+                                .font(.system(size: 21))
+                                .bold()
                         }
                     }
                     

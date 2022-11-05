@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
-
+import UniformTypeIdentifiers
 struct OmarCertificatePage: View {
+    @State private var document: MessageDocument = MessageDocument(message: "Hello, World!")
+       @State private var isImporting: Bool = false
+       @State private var isExporting: Bool = false
+       
     var body: some View {
         NavigationView {
             ScrollView{
@@ -558,21 +562,63 @@ struct OmarCertificatePage: View {
                         
                     }
                 }
-                VStack{
-    //                Spacer()
-                    Button("Export"){
+                
+                VStack {
+                       
                       
-                    }
+                           HStack {
+                             
+                               
+                              
+                               
+                               Spacer()
+                               
+                               Button(action: { isExporting = true }, label: {
+                                   Text("Export")
+                                       .padding()
+                                                           .frame(width: 310.0 , height: 48.0)
+                                                           .background(Color(red:0.586, green:0.75 ,blue: 0.678))
+                                                           .foregroundColor(.white)
+                                                          .cornerRadius(60)
+                                                          .font(.system(size: 23))
+                                                           .bold()
+                               })
+                               
+                               Spacer()
+                           }
+                       
+                   }
+                   .padding()
+                   .fileExporter(
+                         isPresented: $isExporting,
+                         document: document,
+                         contentType: .plainText,
+                         defaultFilename: "Message"
+                     ) { result in
+                         if case .success = result {
+                             // Handle success.
+                         } else {
+                             // Handle failure.
+                         }
+                     }
+               
+                
+           
+//                VStack{
+//    //                Spacer()
+//                    Button("Export"){
+//
+//                    }
                     
-                    .padding()
-                    .frame(width: 310.0 , height: 48.0)
-                    .background(Color(red:0.586, green:0.75 ,blue: 0.678))
-                    .foregroundColor(.white)
-                    .cornerRadius(60)
-                    .font(.system(size: 23))
-                    .bold()
-                    
-                }
+//                    .padding()
+//                    .frame(width: 310.0 , height: 48.0)
+//                    .background(Color(red:0.586, green:0.75 ,blue: 0.678))
+//                    .foregroundColor(.white)
+//                    .cornerRadius(60)
+//                    .font(.system(size: 23))
+//                    .bold()
+//
+//                }
             }
             .navigationTitle("Immunization Certificate")
             .navigationBarTitleDisplayMode(.inline)
@@ -582,6 +628,7 @@ struct OmarCertificatePage: View {
         }
     }
 }
+
 
 
 struct OmarCertificatePage_Previews: PreviewProvider {

@@ -616,15 +616,31 @@ struct VaccinationState: View {
                         .fill(Color(red: 0.579, green: 0.742, blue: 0.675))
                         .frame(width: 250, height: 40)
                     
-                    Button {
-                        print("Add child profile")
-                    } label: {
-                        
-                        Text("Add child profile")
-                            .foregroundColor(.white)
-                            .font(.title)
-                            .padding()
-                    }
+                    NavigationLink(
+                destination: ContentView().navigationBarHidden(true), label: {     Text("Add child profile")
+                                        
+                                    .padding()
+                                       
+                                    })
+                                .navigationBarHidden(true)
+                                
+                           
+                                    .frame(width: 300, height: 50)
+                                    .background(CustomColor.myColor)
+                                    .cornerRadius(50)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 21))
+                                    .bold()
+                    
+//                    Button {
+//                        print("Add child profile")
+//                    } label: {
+//
+//                        Text("Add child profile")
+//                            .foregroundColor(.white)
+//                            .font(.title)
+//                            .padding()
+//                    }
                 }            .navigationTitle("Vaccination status")
                     .navigationBarTitleDisplayMode(.inline)
 

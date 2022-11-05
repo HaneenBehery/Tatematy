@@ -28,6 +28,7 @@
 		7382D0CF291243E3003D7156 /* logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7382D0CE291243E3003D7156 /* logo.swift */; };
 		C45B73C629125CA4003563B7 /* SIGNUP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7382D0C2290E71B7003D7156 /* SIGNUP.swift */; };
 		C45B73C82916888E003563B7 /* VaccinationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B73C72916888E003563B7 /* VaccinationState.swift */; };
+		C45B73CC2916D5A7003563B7 /* MessageDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B73CB2916D5A7003563B7 /* MessageDocument.swift */; };
 		C47D1E9C2907B7A0004BC255 /* TESTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D1E9B2907B7A0004BC255 /* TESTApp.swift */; };
 		C47D1E9E2907B7A0004BC255 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47D1E9D2907B7A0004BC255 /* ContentView.swift */; };
 		C47D1EA02907B7A1004BC255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47D1E9F2907B7A1004BC255 /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 		7382D0CC29110A88003D7156 /* testView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testView.swift; sourceTree = "<group>"; };
 		7382D0CE291243E3003D7156 /* logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logo.swift; sourceTree = "<group>"; };
 		C45B73C72916888E003563B7 /* VaccinationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationState.swift; sourceTree = "<group>"; };
+		C45B73CB2916D5A7003563B7 /* MessageDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDocument.swift; sourceTree = "<group>"; };
 		C47D1E982907B7A0004BC255 /* TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47D1E9B2907B7A0004BC255 /* TESTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TESTApp.swift; sourceTree = "<group>"; };
 		C47D1E9D2907B7A0004BC255 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				53B0C1AC29168BD500A7DCB0 /* SwiftUIView.swift */,
 				53B0C1AE29168C2000A7DCB0 /* QuestionView.swift */,
 				53B0C1B029168C5B00A7DCB0 /* OmarCertificatePage.swift */,
+				C45B73CB2916D5A7003563B7 /* MessageDocument.swift */,
 				53B0C1B229168CC400A7DCB0 /* SaraCertificatePage.swift */,
 			);
 			path = TEST;
@@ -332,6 +335,7 @@
 				26AB6FA529127115001E914C /* (null) in Sources */,
 				C47D1F3A290FA91F004BC255 /* Aviliblity.swift in Sources */,
 				C47D1E9E2907B7A0004BC255 /* ContentView.swift in Sources */,
+				C45B73CC2916D5A7003563B7 /* MessageDocument.swift in Sources */,
 				C45B73C82916888E003563B7 /* VaccinationState.swift in Sources */,
 				C45B73C629125CA4003563B7 /* SIGNUP.swift in Sources */,
 				53B0C1B529168D2500A7DCB0 /* VaccineInfoPage.swift in Sources */,
