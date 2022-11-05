@@ -2,12 +2,20 @@
 //  VaccinationState.swift
 //  TEST
 //
-//  Created by AtheerAlshehri on 08/04/1444 AH.
+//  Created by Haneen Behery on 11/04/1444 AH.
+//
+
+//
+//  ContentView.swift
+//  VaccinationStatus
+//
+//  Created by AtheerAlshehri on 05/04/1444 AH.
 //
 
 import SwiftUI
 
 struct VaccinationState: View {
+    //@State private var isSelected: Bool = false
     var body: some View {
         
         NavigationView {
@@ -32,7 +40,7 @@ struct VaccinationState: View {
                                     .foregroundColor(Color(hue: 0.105, saturation: 0.25, brightness: 0.855))
                             }.frame(width: 90)
                             HStack{
-                                Image(systemName:  "checkmark.square")
+                                Image(systemName: "square")
                                     .padding(.leading,-100.0)
                                     .font(.callout)
                                 
@@ -40,7 +48,7 @@ struct VaccinationState: View {
                                 VStack{
                                     HStack{
                                         Text("BBG").frame(width: 100, height: 20)
-                                        Image(systemName:  "checkmark.square")
+                                        Image(systemName: "square")
                                     }
                                     Divider()
                                     
@@ -51,7 +59,7 @@ struct VaccinationState: View {
                                 VStack{
                                     HStack{
                                         Text("Hepatitis B").frame(width: 100, height: 20)
-                                        Image(systemName:  "checkmark.square")
+                                        Image(systemName: "square")
                                     }
                                     Divider()
                                 }
@@ -66,7 +74,7 @@ struct VaccinationState: View {
                                     .foregroundColor(Color(hue: 0.105, saturation: 0.25, brightness: 0.855))
                             }.frame(width: 90)
                             HStack{
-                                Image(systemName:  "square")
+                                Image(systemName: "square")
                                     .padding(.leading,-100.0)
                                     .font(.callout)
                                 Divider()
@@ -76,14 +84,14 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("Hib").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName:  "checkmark.square")
+                                                Image(systemName: "square")
                                             }
                                             Divider()
                                         }
                                         VStack{
                                             HStack{
                                                 Text("IP").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName:  "checkmark.square")
+                                                Image(systemName: "square")
                                             }
                                             Divider()
                                         }
@@ -93,7 +101,7 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("PC").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName:  "checkmark.square")
+                                                Image(systemName: "square")
                                             }
                                             Divider()
                                         }
@@ -101,7 +109,7 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("DTa").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName:  "checkmark.square")
+                                                Image(systemName: "square")
                                             }
                                             Divider()
                                         }
@@ -133,7 +141,7 @@ struct VaccinationState: View {
                                     .foregroundColor(Color(hue: 0.105, saturation: 0.25, brightness: 0.855))
                             }.frame(width: 90)
                             HStack{
-                                Image(systemName: "square")
+                                Image(systemName: "checkmark.square")
                                     .padding(.leading,-100.0)
                                     .font(.callout)
                                 Divider()
@@ -143,14 +151,14 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("Hib").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
                                         VStack{
                                             HStack{
                                                 Text("IP").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -160,7 +168,7 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("PC").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -168,7 +176,7 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("DTa").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -177,14 +185,14 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("ROTA").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
                                         VStack{
                                             HStack{
                                                 Text("Hepatitis").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -200,7 +208,7 @@ struct VaccinationState: View {
                                     .foregroundColor(Color(hue: 0.105, saturation: 0.25, brightness: 0.855))
                             }.frame(width: 90)
                             HStack{
-                                Image(systemName: "square")
+                                Image(systemName: "checkmark.square")
                                     .padding(.leading,-100.0)
                                     .font(.callout)
                                 Divider()
@@ -210,14 +218,14 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("Hib").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
                                         VStack{
                                             HStack{
                                                 Text("IP").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -227,7 +235,7 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("PC").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -235,7 +243,7 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("DTa").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -244,14 +252,14 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("ROTA").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
                                         VStack{
                                             HStack{
                                                 Text("Hepatitis").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -266,7 +274,7 @@ struct VaccinationState: View {
                                     .foregroundColor(Color(hue: 0.105, saturation: 0.25, brightness: 0.855))
                             }.frame(width: 90)
                             HStack{
-                                Image(systemName: "square")
+                                Image(systemName: "checkmark.square")
                                     .padding(.leading,-100.0)
                                     .font(.callout)
                                 Divider()
@@ -276,14 +284,14 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("Hib").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
                                         VStack{
                                             HStack{
                                                 Text("IP").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -293,7 +301,7 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("PC").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -301,7 +309,7 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("DTa").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -310,14 +318,14 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("ROTA").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
                                         VStack{
                                             HStack{
                                                 Text("Hepatitis").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -333,7 +341,7 @@ struct VaccinationState: View {
                                     .foregroundColor(Color(hue: 0.105, saturation: 0.25, brightness: 0.855))
                             }.frame(width: 90)
                             HStack{
-                                Image(systemName: "square")
+                                Image(systemName: "checkmark.square")
                                     .padding(.leading,-100.0)
                                     .font(.callout)
                                 Divider()
@@ -343,14 +351,14 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("Hib").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
                                         VStack{
                                             HStack{
                                                 Text("IP").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -360,7 +368,7 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("PC").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -368,7 +376,7 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("DTa").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -377,14 +385,14 @@ struct VaccinationState: View {
                                         VStack{
                                             HStack{
                                                 Text("ROTA").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
                                         VStack{
                                             HStack{
                                                 Text("Hepatitis").padding(.horizontal).frame(width: 100, height: 20)
-                                                Image(systemName: "square")
+                                                Image(systemName: "checkmark.square")
                                             }
                                             Divider()
                                         }
@@ -608,7 +616,6 @@ struct VaccinationState: View {
                         .fill(Color(red: 0.579, green: 0.742, blue: 0.675))
                         .frame(width: 250, height: 40)
                     
-
                     Button {
                         print("Add child profile")
                     } label: {
@@ -619,38 +626,15 @@ struct VaccinationState: View {
                             .padding()
                     }
                 }            .navigationTitle("Vaccination status")
-                
                     .navigationBarTitleDisplayMode(.inline)
 
-                
+                    
                     .navigationBarItems(leading: Image(systemName: "chevron.backward.circle"))
                 
                 
-
-                    
-                    NavigationLink(
-                        destination: ContentView().navigationBarHidden(true),
-                        label: {
-                            
-                            Text("Add child profile")
-                                .foregroundColor(.white)
-                                .font(.title)
-                            
-                        })
-                    //      Button {
-                    //                        print("Add child profile")
-                    //                    } label: {
-                    //
-                    //                        Text("Add child profile")
-                    //                            .foregroundColor(.white)
-                    //                            .font(.title)
-                    //                            .padding()
-                    //                    }
-                    //                }            .navigationTitle("Vaccination status")
-                    
-                    
-                }
-
+                
+                
+                
             }
         }
     }
