@@ -619,6 +619,11 @@ struct VaccinationState: View {
                     }
                 }            .navigationTitle("Vaccination status")
                 
+                    .navigationBarTitleDisplayMode(.inline)
+
+                
+                    .navigationBarItems(leading: Image(systemName: "chevron.backward.circle"))
+                
                 
             }
         }
