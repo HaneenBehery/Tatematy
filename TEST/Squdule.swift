@@ -9,19 +9,20 @@ import SwiftUI
 
 struct Squdule: View {
     var body: some View {
+        
         NavigationView{
             
             ScrollView{
                 VStack{
                     HStack{
-                        NavigationLink(
-                            destination: ContentView().navigationBarHidden(true), label: { Image("back") .resizable().frame(width: 30, height: 30)
-
-                            })
-                        .navigationBarHidden(true)
-                       
+//                        NavigationLink(
+//                            destination: ContentView().navigationBarHidden(true), label: { Image("back") .resizable().frame(width: 30, height: 30)
+//
+//                            })
+//                        .navigationBarHidden(true)
+//
                         Spacer()
-                        Text("Schedule").font(.title)
+                        //Text("Schedule").font(.title)
                     }
                     
                     Divider()
@@ -429,8 +430,30 @@ struct Squdule: View {
                 
                 
             }
+            .navigationTitle("Schedule")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(
+            leading: NavigationLink(destination:ContentView().navigationBarHidden(true)) {
+                Image(systemName: "chevron.backward.circle")
+                    .foregroundColor(.black)
+            })
+           
+            
+            .navigationBarItems(
+            trailing: NavigationLink(destination:sittinges()) {
+                Image(systemName: "gearshape")
+                    .foregroundColor(.black)
+            })
+            
+            
+            
+            
+//            .navigationBarItems(leading: Image (systemName: "chevron.backward.circle"), trailing: Image (systemName: "gearshape"))
+//            .navigationBarItems(trailing: Image(systemName: "note.text"))
         }
+        
     }
+    
 }
 struct Squdule_Previews: PreviewProvider {
     static var previews: some View {

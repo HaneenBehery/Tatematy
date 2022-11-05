@@ -128,6 +128,7 @@ struct InfoChild: View {
                                    
                                     
                                 })
+                            .navigationBarHidden(true)
 //                            Button {
 //                                print("Next")
 //                            } label: {

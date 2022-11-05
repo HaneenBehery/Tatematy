@@ -143,9 +143,20 @@ struct sittinges: View {
                         }
                 }
                 .navigationTitle("Setting")
-                
                 .navigationBarTitleDisplayMode(.inline)
-                .navigationBarItems(leading: Image(systemName: "chevron.backward.circle"))
+                .navigationBarItems(
+                leading: NavigationLink(destination:ContentView()) {
+                    Image(systemName: "chevron.backward.circle")
+                        .foregroundColor(.black)
+                })
+                .navigationBarItems(
+                trailing: NavigationLink(destination:sittinges()) {
+                    Image(systemName: "gearshape")
+                        .foregroundColor(.black)
+                })
+//
+//                .navigationBarTitleDisplayMode(.inline)
+//                .navigationBarItems(leading: Image(systemName: "chevron.backward.circle"))
             
             }
         }
