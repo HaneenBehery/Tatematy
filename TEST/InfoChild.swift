@@ -148,6 +148,12 @@ struct InfoChild: View {
                 
                 .navigationTitle("Create Child Profile")
                 
+
+                .navigationBarTitleDisplayMode(.inline)
+
+                .navigationBarItems(leading: Image(systemName: "chevron.backward.circle"))
+
+
             }
         }
     }
