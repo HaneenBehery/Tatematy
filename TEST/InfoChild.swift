@@ -106,14 +106,13 @@ struct InfoChild: View {
 
                     }
                     ZStack{
-                        
-                        
-                        
+  
                         
                         Capsule()
                             .fill(Color(red: 0.579, green: 0.742, blue: 0.675))
                             .frame(width: 150, height: 40)
                         HStack{
+                            
                             NavigationLink(
                                 destination: VaccinationState().navigationBarHidden(true),
                                 label: {
@@ -128,12 +127,13 @@ struct InfoChild: View {
                                    
                                     
                                 })
-                            .navigationBarHidden(true)
+                            
 //                            Button {
 //                                print("Next")
 //                            } label: {
 //
-//                                Text("next")                                .foregroundColor(.white)
+//                                Text("next")
+//                                    .foregroundColor(.white)
 //                                    .font(.title)
 //                                    .padding()
 //
@@ -142,6 +142,7 @@ struct InfoChild: View {
 //                            }
                         }
                     }
+                    
                     .padding()
                     .padding(.leading, 200.0)
                     
@@ -149,10 +150,25 @@ struct InfoChild: View {
                 
                 .navigationTitle("Create Child Profile")
                 
-
-                .navigationBarTitleDisplayMode(.inline)
-
-                .navigationBarItems(leading: Image(systemName: "chevron.backward.circle"))
+                
+                 .navigationBarTitleDisplayMode(.inline)
+                 .navigationBarItems(
+                 leading: NavigationLink(destination:ContentView().navigationBarHidden(true)) {
+                     Image(systemName: "chevron.backward.circle")
+                         .foregroundColor(.black)
+                 })
+                
+                 
+                 .navigationBarItems(
+                 trailing: NavigationLink(destination:sittinges()) {
+                     Image(systemName: "gearshape")
+                         .foregroundColor(.black)
+                 })
+                 .navigationBarItems(
+                 trailing: NavigationLink(destination:sittinges()) {
+                     Image(systemName: "note.text")
+                         .foregroundColor(.black)
+                 })
 
 
             }

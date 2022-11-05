@@ -627,9 +627,18 @@ struct VaccinationState: View {
                     }
                 }            .navigationTitle("Vaccination status")
                     .navigationBarTitleDisplayMode(.inline)
-
+                    .navigationBarItems(
+                    leading: NavigationLink(destination:InfoChild().navigationBarHidden(true)) {
+                        Image(systemName: "chevron.backward.circle")
+                            .foregroundColor(.black)
+                    })
+                   
                     
-                    .navigationBarItems(leading: Image(systemName: "chevron.backward.circle"))
+                    .navigationBarItems(
+                    trailing: NavigationLink(destination:sittinges()) {
+                        Image(systemName: "gearshape")
+                            .foregroundColor(.black)
+                    })
                 
                 
                 

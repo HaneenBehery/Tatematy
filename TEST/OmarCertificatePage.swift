@@ -576,9 +576,21 @@ struct OmarCertificatePage: View {
             }
             .navigationTitle("Immunization Certificate")
             .navigationBarTitleDisplayMode(.inline)
-            .navigationBarItems(leading: Image (systemName: "chevron.backward.circle"), trailing: Image (systemName: "gearshape"))
-            
-            .navigationBarItems(trailing: Image(systemName: "note.text"))
+            .navigationBarItems(
+                leading: NavigationLink(destination:ContentView().navigationBarHidden(true)) {
+                    Image(systemName: "chevron.backward.circle")
+                        .foregroundColor(.black)
+                })
+            .navigationBarItems(
+            trailing: NavigationLink(destination:sittinges()) {
+                Image(systemName: "gearshape")
+                    .foregroundColor(.black)
+            })
+            .navigationBarItems(
+            trailing: NavigationLink(destination:Squdule()) {
+                Image(systemName: "note.text")
+                    .foregroundColor(.black)
+            })
         }
     }
 }

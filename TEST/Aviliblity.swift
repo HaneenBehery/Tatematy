@@ -19,90 +19,112 @@ struct Aviliblity: View {
     
     //.listRowBackground(Color.white)
     var body: some View {
-        VStack {
+        
+        NavigationView{
             
-            HStack(alignment: .center){
+            
+            VStack {
                 
-                Text("Avilablity").padding()
-                    .bold()
-                    .font(.title)
-                Spacer()
-                Image("suq") .resizable()
-                    .frame(width: 30, height: 30)
-                Image("sw").padding()
-            }
-            
-            Divider()
-            
-            NavigationView{
+//                HStack(alignment: .center){
+//
+//                    Text("Avilablity").padding()
+//                        .bold()
+//                        .font(.title)
+//                    Spacer()
+//                    Image("suq") .resizable()
+//                        .frame(width: 30, height: 30)
+//                    Image("sw").padding()
+//                }
                 
-                List{
+                Divider()
+                
+                NavigationView{
                     
-                    ForEach(locations.keys.sorted(),id:\.self){ key in
-                        VStack{
-                            HStack{
-                                Text("\(key)").bold()
+                    List{
+                        
+                        ForEach(locations.keys.sorted(),id:\.self){ key in
+                            VStack{
+                                HStack{
+                                    Text("\(key)").bold()
+                                    Spacer()
+                                    Text("\(locations[key]!)")
+                                    
+                                }
+                                
                                 Spacer()
-                                Text("\(locations[key]!)")
+                                ForEach(vac, id: \.self){vac in
+                                    HStack{
+                                        
+                                        Text(vac).foregroundColor(Color.gray)
+                                        Spacer()
+                                    }
+                                }
+                                Spacer()
+                                
+                                
                                 
                             }
-                            
-                            Spacer()
-                            ForEach(vac, id: \.self){vac in
+                        }
+                        
+                    }.scrollContentBackground(.hidden).searchable(text: $searchText)
+                    {
+                        ForEach(searchResults.keys.sorted(),id:\.self){ key in
+                            VStack{
+                                
+                                
+                                
                                 HStack{
                                     
-                                    Text(vac).foregroundColor(Color.gray)
+                                    
+                                    Text("\(key)").bold()
                                     Spacer()
+                                    Text("\(searchResults[key]!)")
+                                    
                                 }
+                                // Spacer()
+                                
                             }
-                            Spacer()
-                            
-                            
-                            
                         }
                     }
                     
-                }.scrollContentBackground(.hidden).searchable(text: $searchText)
-                {
-                    ForEach(searchResults.keys.sorted(),id:\.self){ key in
-                      VStack{
-                          
-                          
-                          
-                           HStack{
-                               
-
-                              Text("\(key)").bold()
-                                Spacer()
-                                Text("\(searchResults[key]!)")
-                                
-                           }
-                           // Spacer()
-                          
-                        }
-                    }
+                    
+                    //.scrollContentBackground(.hidden)
+                    
+                    
+                    
                 }
-                
-                
-                //.scrollContentBackground(.hidden)
-               
-             
-                
             }
+            .navigationTitle("Avilablity")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(
+            leading: NavigationLink(destination:VaccineInfoPage().navigationBarHidden(true)) {
+                Image(systemName: "chevron.backward.circle")
+                    .foregroundColor(.black)
+            })
+           
+            
+            .navigationBarItems(
+            trailing: NavigationLink(destination:sittinges()) {
+                Image(systemName: "gearshape")
+                    .foregroundColor(.black)
+            })
+            .navigationBarItems(
+            trailing: NavigationLink(destination:Squdule()) {
+                Image(systemName: "note.text")
+                    .foregroundColor(.black)
+            })
         }
-        
     }
     
-    
     //search fun
-    var searchResults: [String:String] {
-        if searchText.isEmpty {
-            return locations
-        } else {
-           
-            return locations.filter { $0.key.contains(searchText) }
+        var searchResults: [String:String] {
+            if searchText.isEmpty {
+                return locations
+            } else {
+                
+                return locations.filter { $0.key.contains(searchText) }
+            
         }
-        
     }
 
 }

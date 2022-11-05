@@ -15,40 +15,40 @@ struct ContactUs: View {
             
             ZStack {
                 VStack{
-                RoundedRectangle(cornerRadius: 30, style: .continuous)
-                .stroke(Color(red: 0.904, green: 0.743, blue: 0.468), lineWidth: 1)
-                .frame(width: 350, height: 44)
-                .overlay {
+                    RoundedRectangle(cornerRadius: 30, style: .continuous)
+                        .stroke(Color(red: 0.904, green: 0.743, blue: 0.468), lineWidth: 1)
+                        .frame(width: 350, height: 44)
+                        .overlay {
                             
-            HStack {
+                            HStack {
                                 
-                Image(systemName: "envelope")
-                .foregroundColor(Color(red: 0.904, green: 0.743, blue: 0.468))
-                .padding(.leading, -100.0)
-                Text("Vaccinaiton11@gmail.com")
-                .font(.callout)
-                .foregroundColor(.black)
-                .multilineTextAlignment(.leading)
-                .padding(.leading, -79.0)
+                                Image(systemName: "envelope")
+                                    .foregroundColor(Color(red: 0.904, green: 0.743, blue: 0.468))
+                                    .padding(.leading, -100.0)
+                                Text("Vaccinaiton11@gmail.com")
+                                    .font(.callout)
+                                    .foregroundColor(.black)
+                                    .multilineTextAlignment(.leading)
+                                    .padding(.leading, -79.0)
                                 
                             }
                         }
                     
-            RoundedRectangle(cornerRadius: 30, style: .continuous)
-                .stroke(Color(red: 0.904, green: 0.743, blue: 0.468), lineWidth: 1)
-                .frame(width: 350, height: 44)
-                .overlay {
+                    RoundedRectangle(cornerRadius: 30, style: .continuous)
+                        .stroke(Color(red: 0.904, green: 0.743, blue: 0.468), lineWidth: 1)
+                        .frame(width: 350, height: 44)
+                        .overlay {
                             
-            HStack {
+                            HStack {
                                 
-            Image(systemName: "phone")
-                .foregroundColor(Color(red: 0.904, green: 0.743, blue: 0.468))
-                .padding(.leading, -150.0)
-            Text("966554433221")
-                .font(.callout)
-                .foregroundColor(.black)
-                .multilineTextAlignment(.leading)
-                .padding(.leading, -130.0)
+                                Image(systemName: "phone")
+                                    .foregroundColor(Color(red: 0.904, green: 0.743, blue: 0.468))
+                                    .padding(.leading, -150.0)
+                                Text("966554433221")
+                                    .font(.callout)
+                                    .foregroundColor(.black)
+                                    .multilineTextAlignment(.leading)
+                                    .padding(.leading, -130.0)
                                 
                             }
                         }
@@ -59,13 +59,23 @@ struct ContactUs: View {
                 .navigationTitle("Contact us")
                 
                 .navigationBarTitleDisplayMode(.inline)
-                .navigationBarItems(leading: Image(systemName: "chevron.backward.circle"))
+                .navigationBarItems(
+                    leading: NavigationLink(destination:sittinges().navigationBarHidden(true)) {
+                        Image(systemName: "chevron.backward.circle")
+                            .foregroundColor(.black)
+                    })
+                
+                
+                
             }
         }
-    }
-        struct ContactUs_Previews: PreviewProvider {
-            static var previews: some View {
-                ContactUs()
-            }
-        }
-    }
+                    
+                    }
+                    
+                    }
+                    struct ContactUs_Previews: PreviewProvider {
+                        static var previews: some View {
+                            ContactUs()
+                        }
+                    }
+                    

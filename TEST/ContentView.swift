@@ -200,23 +200,8 @@ struct ContentView: View {
                 
                     
                 }.padding()
-                
-                
-                
-                
-                
-                
             
-                
-                
-                
-                // .frame(maxWidth: .infinity)
-                // .foregroundColor(. black)
-                // .background(Color.white)
-                //.border(Color.yellow)
-                
-                
-                //   .cornerRadius(15)
+
             }
         }
         

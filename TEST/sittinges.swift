@@ -125,38 +125,34 @@ struct sittinges: View {
                                 .padding([.leading], -10) }
                         
                     }
-                        
-                    
-                        }
-                       
                         Spacer()
-                        HStack {
-                            Button ("Log Out") {
-                        
-                            }
-                            .bold()
-                            .frame(width: 350, height: 44)
-                            .background(Color(red: 0.586, green: 0.75, blue: 0.683))
-                            .foregroundColor(.white)
-                            .cornerRadius(60)
-                            .font(.system(size: 23))
-                        }
+                HStack {
+                    Button ("Log Out") {
+
+                    }
+                    .bold()
+                    .frame(width: 350, height: 44)
+                    .background(Color(red: 0.586, green: 0.75, blue: 0.683))
+                    .foregroundColor(.white)
+                    .cornerRadius(60)
+                    .font(.system(size: 23))
                 }
-                .navigationTitle("Setting")
-                .navigationBarTitleDisplayMode(.inline)
-                .navigationBarItems(
-                leading: NavigationLink(destination:ContentView()) {
-                    Image(systemName: "chevron.backward.circle")
-                        .foregroundColor(.black)
-                })
-                .navigationBarItems(
-                trailing: NavigationLink(destination:sittinges()) {
-                    Image(systemName: "gearshape")
-                        .foregroundColor(.black)
-                })
-//
-//                .navigationBarTitleDisplayMode(.inline)
-//                .navigationBarItems(leading: Image(systemName: "chevron.backward.circle"))
+                        }
+            
+            
+                        .navigationTitle("Setting")
+            
+                        .navigationBarTitleDisplayMode(.inline)
+            
+                        .navigationBarItems(
+                        leading: NavigationLink(destination:ContentView()) {
+                            Image(systemName: "chevron.backward.circle")
+                                .foregroundColor(.black)
+                        })
+                    
+                }
+               
+
             
             }
         }

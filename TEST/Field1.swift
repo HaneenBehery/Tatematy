@@ -84,7 +84,12 @@ struct body: View {
                     .navigationTitle("Account")
                 
                     .navigationBarTitleDisplayMode(.inline)
-                    .navigationBarItems(leading: Image(systemName: "chevron.backward.circle"))
+                    .navigationBarItems(
+                    leading: NavigationLink(destination:sittinges().navigationBarHidden(true)) {
+                        Image(systemName: "chevron.backward.circle")
+                            .foregroundColor(.black)
+                    })
+                   
             }
             .padding(5.0)
         }
