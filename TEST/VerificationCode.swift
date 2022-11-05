@@ -94,14 +94,34 @@ struct VerificationCode: View {
         .onChange(of: no4) { newValue in if newValue.count == 1 { //focusesField = .no3
                             }}
                         }}}
+//
+//        HStack{ Text("Didn’t Receive Code?")
+//        Button ("RESEND CODE"){ }
+//        .foregroundColor(Color(red: 0.592, green: 0.75, blue: 0.683))
+//                }
+            
+            VStack{
+                HStack{
+                    Text("Didn’t Receive Code?")
+                    Button ("RESEND CODE"){ }
+                    .foregroundColor(Color(red: 0.592, green: 0.75, blue: 0.683))}
+                NavigationLink(
+                    destination: NewChild().navigationBarHidden(true),
+                    label: {
+                        Text(" confirm")
+                            .frame(width: 150.0, height: 37.0)
+                            .background(Color(red: 0.586, green: 0.75, blue: 0.678))
+                            .foregroundColor(.white)
+                            .cornerRadius(60)
+                            .font(.system(size: 23))
+                    })
                 
-        HStack{ Text("Didn’t Receive Code?")
-        Button ("RESEND CODE"){ }
-        .foregroundColor(Color(red: 0.592, green: 0.75, blue: 0.683))
-                }
+                
+            }
             }
          
             }
+        
         
 //        VStack{
       //  ZStack{
