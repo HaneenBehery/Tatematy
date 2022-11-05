@@ -22,8 +22,9 @@ struct TESTApp: App {
            //SIGNUPG()
 
           //SIGNIN()
-            logo()
-
+           logo()
+           // VaccineInfoPage()
+          //  OmarCertificatePage()
           // SIGNIN()
 
 
