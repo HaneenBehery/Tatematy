@@ -18,6 +18,7 @@ struct SIGNUPG: View {
     
     var body: some View {
         NavigationView{
+          //  ScrollView{
             ZStack {
                 Image("sign up")
                     .ignoresSafeArea()
@@ -66,8 +67,10 @@ struct SIGNUPG: View {
                             }
                             .padding()
                             
+                            
                         }
                         NavigationLink(destination: VerificationCode().navigationBarHidden(true), label: {
+                            
                            Text ("sing Up")
                             
 //                            {}
@@ -87,9 +90,12 @@ struct SIGNUPG: View {
                 }
             }
             .padding()
+     
+           
+            }
         }
     }
-}
+//}
 
 struct SIGNUP_Previews: PreviewProvider {
     static var previews: some View {

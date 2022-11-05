@@ -59,8 +59,15 @@ struct accScreen: View {
                 }.padding()
                     .navigationTitle("Account")
                 
-                    .navigationBarTitleDisplayMode(.inline)
-                    .navigationBarItems(leading: Image(systemName: "chevron.backward.circle"))
+                                          
+                 .navigationBarTitleDisplayMode(.inline)
+                 .navigationBarItems(
+                 leading: NavigationLink(destination:sittinges().navigationBarHidden(true)) {
+                     Image(systemName: "chevron.backward.circle")
+                         .foregroundColor(.black)
+                 })
+                
+       
             }
             .padding(5.0)
         }

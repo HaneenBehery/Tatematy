@@ -21,8 +21,11 @@ struct SwiftUIView: View {
                        }
                        .navigationTitle(Text("Questions"))
                        .navigationBarTitleDisplayMode(.inline)
-           //            .foregroundColor(.gray)
-                       .navigationBarItems(leading: Image(systemName: "chevron.backward.circle"))
+                       .navigationBarItems(
+                           leading: NavigationLink(destination:sittinges().navigationBarHidden(true)) {
+                               Image(systemName: "chevron.backward.circle")
+                                   .foregroundColor(.black)
+                           })
                    
                            
                        }
