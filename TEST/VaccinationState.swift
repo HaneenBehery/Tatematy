@@ -608,6 +608,7 @@ struct VaccinationState: View {
                         .fill(Color(red: 0.579, green: 0.742, blue: 0.675))
                         .frame(width: 250, height: 40)
                     
+
                     Button {
                         print("Add child profile")
                     } label: {
@@ -625,6 +626,31 @@ struct VaccinationState: View {
                     .navigationBarItems(leading: Image(systemName: "chevron.backward.circle"))
                 
                 
+
+                    
+                    NavigationLink(
+                        destination: ContentView().navigationBarHidden(true),
+                        label: {
+                            
+                            Text("Add child profile")
+                                .foregroundColor(.white)
+                                .font(.title)
+                            
+                        })
+                    //      Button {
+                    //                        print("Add child profile")
+                    //                    } label: {
+                    //
+                    //                        Text("Add child profile")
+                    //                            .foregroundColor(.white)
+                    //                            .font(.title)
+                    //                            .padding()
+                    //                    }
+                    //                }            .navigationTitle("Vaccination status")
+                    
+                    
+                }
+
             }
         }
     }

@@ -114,17 +114,31 @@ struct InfoChild: View {
                             .fill(Color(red: 0.579, green: 0.742, blue: 0.675))
                             .frame(width: 150, height: 40)
                         HStack{
-                            Button {
-                                print("Next")
-                            } label: {
-                                
-                                Text("next")                                .foregroundColor(.white)
+                            NavigationLink(
+                                destination: VaccinationState().navigationBarHidden(true),
+                                label: {
+                                    
+                                    Text("Next")
+                                        .foregroundColor(.white)
                                     .font(.title)
-                                    .padding()
-                                
-                                Image("next 1")
-                                    .foregroundColor(.white)
-                            }
+                                   
+                                    Image("next 1")
+                                        .foregroundColor(.white)
+                                    .font(.largeTitle)
+                                   
+                                    
+                                })
+//                            Button {
+//                                print("Next")
+//                            } label: {
+//
+//                                Text("next")                                .foregroundColor(.white)
+//                                    .font(.title)
+//                                    .padding()
+//
+//                                Image("next 1")
+//                                    .foregroundColor(.white)
+//                            }
                         }
                     }
                     .padding()
@@ -134,9 +148,12 @@ struct InfoChild: View {
                 
                 .navigationTitle("Create Child Profile")
                 
+
                 .navigationBarTitleDisplayMode(.inline)
 
                 .navigationBarItems(leading: Image(systemName: "chevron.backward.circle"))
+
+
             }
         }
     }
