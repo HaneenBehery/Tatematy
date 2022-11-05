@@ -182,8 +182,8 @@ struct sittinges: View {
 
             
             }
-        }
-    
+        
+
 
 struct sittinges_Previews: PreviewProvider {
     static var previews: some View {
